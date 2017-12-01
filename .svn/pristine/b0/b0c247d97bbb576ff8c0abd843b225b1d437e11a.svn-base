@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\work\\software\\Android\\projects\\SuperLamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "D:\\work\\software\\Android\\projects\\SuperLamp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\work\\software\\Android\\projects\\SuperLamp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "D:\\work\\software\\Android\\projects\\SuperLamp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    }
+]

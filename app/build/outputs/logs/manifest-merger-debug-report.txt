@@ -1,0 +1,355 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:1:1-99:12
+INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:1:1-99:12
+INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:1:1-99:12
+INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:1:1-99:12
+MERGED from [pub.devrel:easypermissions:0.1.9] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-0.1.9.aar\e2d092484e5b07dd6840d429466e804d\AndroidManifest.xml:2:1-14:12
+MERGED from [com.bigkoo:convenientbanner:2.0.5] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\convenientbanner-2.0.5.aar\34c2430cff06a5e3cbc472f8d20301ef\AndroidManifest.xml:2:1-9:12
+MERGED from [com.zhy:percent-support-extends:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\percent-support-extends-1.1.1.aar\e06efd35a89da5289ba4b3abbf179e67\AndroidManifest.xml:2:1-16:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6a8b09efde42f84982ba083742b4753d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\ccbdc638fd35a3f91f694d551d8092fb\AndroidManifest.xml:2:1-7:12
+MERGED from [com.mxn.soul:flowingdrawer-core:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\flowingdrawer-core-2.0.0.aar\384f7548d3db36276df62f37a78d109f\AndroidManifest.xml:2:1-12:12
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\SmartRefreshLayout-1.0.3.aar\d4ff00593a99161005f6475ab664b944\AndroidManifest.xml:2:1-17:12
+MERGED from [com.scwang.smartrefresh:SmartRefreshHeader:1.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\SmartRefreshHeader-1.0.3.aar\9b68d70ebb293539a0e64cb7da3db6cf\AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:recyclerview-v7:27.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.0.aar\1b8a1515ebcd2cd2c03d1779a3f264f6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\3bd071f7580b0d1c88acc68eb65bcf63\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8e32669e7a8e488d8f0bdb3abfefe546\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\4afc30a32f4d9d5e3a0c601c364f6139\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0ab74ae4163edf0259282212ea294d65\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0482fab928c28a724a99233f6a21eda9\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\08a10ad64f628d8290f19b34da2d5439\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:27.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.0.aar\398fd257def91bbb5ccb174a88dcbf00\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.0.aar\40de10005b6cb3603ca9fd41a2cbdbf0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c61b7765e23ba3636ee72326e0c05697\AndroidManifest.xml:17:1-30:12
+INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:1:1-99:12
+INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:1:1-99:12
+INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:1:1-99:12
+	package
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:4:5-35
+		INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:1:1-99:12
+		INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:2:5-51
+	android:versionCode
+		INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:1:1-99:12
+		INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:5:5-71
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:5:22-68
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:6:22-73
+uses-permission#android.permission.READ_LOGS
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:7:5-68
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:7:22-65
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:9:5-73
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:9:22-70
+uses-permission#android.permission.INTERNET
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:10:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:11:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:12:5-76
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:12:22-73
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:13:5-68
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:13:22-65
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:14:5-74
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:14:22-72
+uses-permission#android.permission.RESTART_PACKAGES
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:15:5-75
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:15:22-72
+uses-permission#android.permission.GET_TASKS
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:16:5-68
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:16:22-65
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:17:5-71
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:17:22-68
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:18:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:19:5-66
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:19:22-63
+uses-permission#android.permission.REORDER_TASKS
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:20:5-72
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:20:22-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:21:5-80
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:21:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:22:22-78
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:23:5-84
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:23:22-81
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:24:5-78
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:24:22-76
+uses-permission#android.permission.CAMERA
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:25:5-64
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:25:22-62
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:26:5-68
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:26:22-66
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:27:5-78
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:27:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:28:5-80
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:28:22-78
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:29:5-89
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:29:22-86
+application
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:31:5-96:19
+MERGED from [pub.devrel:easypermissions:0.1.9] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-0.1.9.aar\e2d092484e5b07dd6840d429466e804d\AndroidManifest.xml:12:5-20
+MERGED from [pub.devrel:easypermissions:0.1.9] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-0.1.9.aar\e2d092484e5b07dd6840d429466e804d\AndroidManifest.xml:12:5-20
+MERGED from [com.zhy:percent-support-extends:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\percent-support-extends-1.1.1.aar\e06efd35a89da5289ba4b3abbf179e67\AndroidManifest.xml:11:5-14:19
+MERGED from [com.zhy:percent-support-extends:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\percent-support-extends-1.1.1.aar\e06efd35a89da5289ba4b3abbf179e67\AndroidManifest.xml:11:5-14:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6a8b09efde42f84982ba083742b4753d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6a8b09efde42f84982ba083742b4753d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\SmartRefreshLayout-1.0.3.aar\d4ff00593a99161005f6475ab664b944\AndroidManifest.xml:11:5-15:19
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\SmartRefreshLayout-1.0.3.aar\d4ff00593a99161005f6475ab664b944\AndroidManifest.xml:11:5-15:19
+MERGED from [com.scwang.smartrefresh:SmartRefreshHeader:1.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\SmartRefreshHeader-1.0.3.aar\9b68d70ebb293539a0e64cb7da3db6cf\AndroidManifest.xml:11:5-15:19
+MERGED from [com.scwang.smartrefresh:SmartRefreshHeader:1.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\SmartRefreshHeader-1.0.3.aar\9b68d70ebb293539a0e64cb7da3db6cf\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\3bd071f7580b0d1c88acc68eb65bcf63\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\3bd071f7580b0d1c88acc68eb65bcf63\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8e32669e7a8e488d8f0bdb3abfefe546\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8e32669e7a8e488d8f0bdb3abfefe546\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\4afc30a32f4d9d5e3a0c601c364f6139\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\4afc30a32f4d9d5e3a0c601c364f6139\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0ab74ae4163edf0259282212ea294d65\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0ab74ae4163edf0259282212ea294d65\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0482fab928c28a724a99233f6a21eda9\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0482fab928c28a724a99233f6a21eda9\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\08a10ad64f628d8290f19b34da2d5439\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\08a10ad64f628d8290f19b34da2d5439\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c61b7765e23ba3636ee72326e0c05697\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c61b7765e23ba3636ee72326e0c05697\AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:35:9-35
+	android:label
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:34:9-41
+	android:icon
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:33:9-37
+	android:allowBackup
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:32:9-35
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:36:9-28
+activity#com.linkus.superlamp.view.SplashActivity
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:37:9-46:20
+	android:screenOrientation
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:41:13-49
+	android:windowSoftInputMode
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:39:13-64
+	android:configChanges
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:40:13-74
+	android:theme
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:38:13-44
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:37:19-54
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:42:13-45:29
+action#android.intent.action.MAIN
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:43:17-69
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:43:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:44:17-77
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:44:27-74
+activity#com.linkus.superlamp.view.MainActivity
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:48:9-53:20
+	android:screenOrientation
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:52:13-49
+	android:windowSoftInputMode
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:50:13-64
+	android:configChanges
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:51:13-74
+	android:theme
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:49:13-44
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:48:19-52
+activity#com.linkus.superlamp.view.LoginActivity
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:55:9-60:20
+	android:screenOrientation
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:59:13-49
+	android:windowSoftInputMode
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:57:13-64
+	android:configChanges
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:58:13-74
+	android:theme
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:56:13-44
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:55:19-53
+activity#com.linkus.superlamp.view.AddDeviceActivity
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:62:9-67:20
+	android:screenOrientation
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:66:13-49
+	android:windowSoftInputMode
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:64:13-64
+	android:configChanges
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:65:13-74
+	android:theme
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:63:13-44
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:62:19-57
+activity#com.linkus.superlamp.view.GroupListActivity
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:68:9-73:20
+	android:screenOrientation
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:72:13-49
+	android:windowSoftInputMode
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:70:13-64
+	android:configChanges
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:71:13-74
+	android:theme
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:69:13-44
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:68:19-57
+activity#com.linkus.superlamp.view.LampBulbActivity
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:74:9-83:20
+	android:screenOrientation
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:78:13-49
+	android:windowSoftInputMode
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:76:13-64
+	android:configChanges
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:77:13-74
+	android:theme
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:75:13-44
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:74:19-56
+activity#com.linkus.superlamp.view.ClockActivity
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:84:9-89:20
+	android:screenOrientation
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:88:13-49
+	android:windowSoftInputMode
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:86:13-64
+	android:configChanges
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:87:13-74
+	android:theme
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:85:13-44
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:84:19-53
+receiver#com.linkus.superlamp.utils.NetBroadcastReceiver
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:91:9-95:20
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:91:19-61
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:92:13-94:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:93:17-79
+	android:name
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:93:25-76
+uses-sdk
+INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+MERGED from [pub.devrel:easypermissions:0.1.9] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-0.1.9.aar\e2d092484e5b07dd6840d429466e804d\AndroidManifest.xml:8:5-10:41
+MERGED from [pub.devrel:easypermissions:0.1.9] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-0.1.9.aar\e2d092484e5b07dd6840d429466e804d\AndroidManifest.xml:8:5-10:41
+MERGED from [com.bigkoo:convenientbanner:2.0.5] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\convenientbanner-2.0.5.aar\34c2430cff06a5e3cbc472f8d20301ef\AndroidManifest.xml:7:5-44
+MERGED from [com.bigkoo:convenientbanner:2.0.5] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\convenientbanner-2.0.5.aar\34c2430cff06a5e3cbc472f8d20301ef\AndroidManifest.xml:7:5-44
+MERGED from [com.zhy:percent-support-extends:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\percent-support-extends-1.1.1.aar\e06efd35a89da5289ba4b3abbf179e67\AndroidManifest.xml:7:5-9:41
+MERGED from [com.zhy:percent-support-extends:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\percent-support-extends-1.1.1.aar\e06efd35a89da5289ba4b3abbf179e67\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6a8b09efde42f84982ba083742b4753d\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6a8b09efde42f84982ba083742b4753d\AndroidManifest.xml:21:5-23:78
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\ccbdc638fd35a3f91f694d551d8092fb\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\ccbdc638fd35a3f91f694d551d8092fb\AndroidManifest.xml:5:5-43
+MERGED from [com.mxn.soul:flowingdrawer-core:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\flowingdrawer-core-2.0.0.aar\384f7548d3db36276df62f37a78d109f\AndroidManifest.xml:8:5-10:41
+MERGED from [com.mxn.soul:flowingdrawer-core:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\flowingdrawer-core-2.0.0.aar\384f7548d3db36276df62f37a78d109f\AndroidManifest.xml:8:5-10:41
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\SmartRefreshLayout-1.0.3.aar\d4ff00593a99161005f6475ab664b944\AndroidManifest.xml:7:5-9:41
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\SmartRefreshLayout-1.0.3.aar\d4ff00593a99161005f6475ab664b944\AndroidManifest.xml:7:5-9:41
+MERGED from [com.scwang.smartrefresh:SmartRefreshHeader:1.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\SmartRefreshHeader-1.0.3.aar\9b68d70ebb293539a0e64cb7da3db6cf\AndroidManifest.xml:7:5-9:41
+MERGED from [com.scwang.smartrefresh:SmartRefreshHeader:1.0.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\SmartRefreshHeader-1.0.3.aar\9b68d70ebb293539a0e64cb7da3db6cf\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:27.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.0.aar\1b8a1515ebcd2cd2c03d1779a3f264f6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.0.aar\1b8a1515ebcd2cd2c03d1779a3f264f6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\3bd071f7580b0d1c88acc68eb65bcf63\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\3bd071f7580b0d1c88acc68eb65bcf63\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8e32669e7a8e488d8f0bdb3abfefe546\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8e32669e7a8e488d8f0bdb3abfefe546\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\4afc30a32f4d9d5e3a0c601c364f6139\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\4afc30a32f4d9d5e3a0c601c364f6139\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0ab74ae4163edf0259282212ea294d65\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0ab74ae4163edf0259282212ea294d65\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0482fab928c28a724a99233f6a21eda9\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0482fab928c28a724a99233f6a21eda9\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\08a10ad64f628d8290f19b34da2d5439\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\08a10ad64f628d8290f19b34da2d5439\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:27.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.0.aar\398fd257def91bbb5ccb174a88dcbf00\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.0.aar\398fd257def91bbb5ccb174a88dcbf00\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.0.aar\40de10005b6cb3603ca9fd41a2cbdbf0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.0.aar\40de10005b6cb3603ca9fd41a2cbdbf0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c61b7765e23ba3636ee72326e0c05697\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c61b7765e23ba3636ee72326e0c05697\AndroidManifest.xml:20:5-22:41
+INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6a8b09efde42f84982ba083742b4753d\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+		ADDED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\work\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6a8b09efde42f84982ba083742b4753d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\3bd071f7580b0d1c88acc68eb65bcf63\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\3bd071f7580b0d1c88acc68eb65bcf63\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8e32669e7a8e488d8f0bdb3abfefe546\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8e32669e7a8e488d8f0bdb3abfefe546\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\4afc30a32f4d9d5e3a0c601c364f6139\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\4afc30a32f4d9d5e3a0c601c364f6139\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0ab74ae4163edf0259282212ea294d65\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\0ab74ae4163edf0259282212ea294d65\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0482fab928c28a724a99233f6a21eda9\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0482fab928c28a724a99233f6a21eda9\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\08a10ad64f628d8290f19b34da2d5439\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\08a10ad64f628d8290f19b34da2d5439\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6a8b09efde42f84982ba083742b4753d\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6a8b09efde42f84982ba083742b4753d\AndroidManifest.xml:27:13-51
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c61b7765e23ba3636ee72326e0c05697\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c61b7765e23ba3636ee72326e0c05697\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\c61b7765e23ba3636ee72326e0c05697\AndroidManifest.xml:26:13-58

@@ -1,0 +1,209 @@
+package com.linkus.superlamp.view;
+
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
+import android.view.KeyEvent;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.bigkoo.convenientbanner.view.CBLoopViewPager;
+import com.linkus.superlamp.BaseActivity;
+import com.linkus.superlamp.R;
+import com.linkus.superlamp.adapters.HomePageAdapter;
+import com.linkus.superlamp.fragments.FragmentDevices;
+import com.linkus.superlamp.fragments.FragmentGroups;
+import com.linkus.superlamp.fragments.FragmentScenes;
+import com.linkus.superlamp.logger.Logger;
+import com.linkus.superlamp.utils.ScreenUtil;
+import com.linkus.superlamp.widget.HorizontalScrollDisabledViewPager;
+import com.mxn.soul.flowingdrawer_core.ElasticDrawer;
+import com.mxn.soul.flowingdrawer_core.FlowingDrawer;
+import com.mxn.soul.flowingdrawer_core.FlowingMenuLayout;
+import com.nineoldandroids.view.ViewHelper;
+
+import java.util.ArrayList;
+
+import butterknife.BindView;
+import butterknife.OnClick;
+
+
+public class MainActivity extends BaseActivity {
+    public static final int ADD_DEVICES = 1;
+    private long lastFinishTime ;
+    @BindView(R.id.show_drawer)
+    ImageView showDrawer;
+    @BindView(R.id.tv_page_name)
+    TextView pageName;
+    @BindView(R.id.iv_top_right)
+    ImageView topRight;
+    @BindView(R.id.drawerlayout)
+    FlowingDrawer drawer;
+    @BindView(R.id.content)
+    RelativeLayout content;
+    @BindView(R.id.menulayout)
+    FlowingMenuLayout menulayout;
+    @BindView(R.id.cb_content)
+    HorizontalScrollDisabledViewPager cbContent;
+    @BindView(R.id.ll_bottom)
+    LinearLayout llBottom;
+    private ArrayList<Fragment> listFragments;
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        Logger.i(TAG, "onKeyDown ==>> " + keyCode);
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            return doubleClick();
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    /**
+     * 双击是否退出
+     * @return
+     */
+    private boolean doubleClick() {
+        Logger.i(TAG, " need to finish System.currentTimeMillis() " + System.currentTimeMillis() + " >> lastFinishTime " + lastFinishTime);
+        long currentTimeMillis = System.currentTimeMillis();
+        if (currentTimeMillis - lastFinishTime < 2000) {
+            finish();
+        } else {
+            showToast("再按一次退出");
+            lastFinishTime = currentTimeMillis;
+            return true;
+        }
+        lastFinishTime = currentTimeMillis;
+        return false;
+    }
+
+    @Override
+    protected void beforeShow(Bundle savedInstanceState) {
+
+    }
+
+    @Override
+    public void bindView() {
+        setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    public void findAllViews() {
+        showDrawer.setVisibility(View.VISIBLE);
+        pageName.setVisibility(View.VISIBLE);
+        topRight.setVisibility(View.VISIBLE);
+        pageName.setText("LINKUS LIGHT");
+    }
+
+    @Override
+    public void setAllListeners() {
+        drawer.setTouchMode(ElasticDrawer.TOUCH_MODE_FULLSCREEN);
+        drawer.setOnDrawerStateChangeListener(new ElasticDrawer.OnDrawerStateChangeListener() {
+            @Override
+            public void onDrawerStateChange(int oldState, int newState) {
+                if (newState == ElasticDrawer.STATE_CLOSED) {
+                    Logger.i("MainActivity", "Drawer STATE_CLOSED");
+                }
+            }
+
+            @Override
+            public void onDrawerSlide(float openRatio, int offsetPixels) {
+//                Logger.i("MainActivity", "openRatio=" + openRatio + " ,offsetPixels=" + offsetPixels);
+                ViewHelper.setTranslationX(content,offsetPixels * 0.8f);
+            }
+        });
+        FragmentDevices deviceFragment = new FragmentDevices();
+        FragmentGroups groupsFragment = new FragmentGroups();
+        FragmentScenes scenesFragment = new FragmentScenes();
+        listFragments = new ArrayList<>();
+        listFragments.add(deviceFragment);
+        listFragments.add(groupsFragment);
+        listFragments.add(scenesFragment);
+        cbContent.setAdapter(new HomePageAdapter(getSupportFragmentManager(), listFragments));
+        cbContent.setNoScroll(true);
+
+        int childCount = llBottom.getChildCount();
+        for (int i = 0; i < childCount; i++) {
+            View tab = llBottom.getChildAt(i);
+            final int finalI = i;
+            tab.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    cbContent.setCurrentItem(finalI,true);
+                }
+            });
+        }
+    }
+
+    @Override
+    public void doProcess() {
+        // attach to current activity_add_device;
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        Logger.i(TAG,"onDestroy onDestroy");
+        super.onDestroy();
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+
+    @OnClick({R.id.show_drawer, R.id.iv_top_right})
+    public void onViewClicked(View v) {
+        switch (v.getId()) {
+            case R.id.show_drawer:
+                showDrawer();
+                break;
+            case R.id.iv_top_right:
+                topAddClick();
+                break;
+        }
+    }
+
+    private void topAddClick() {
+        if (cbContent.getCurrentItem() == 0){//设备
+            FragmentDevices devices = (FragmentDevices) listFragments.get(0);
+            devices.addDevice();
+        }
+        if (cbContent.getCurrentItem() == 1){//分组
+            FragmentGroups groups = (FragmentGroups) listFragments.get(1);
+            groups.addGroup();
+        }
+
+        if (cbContent.getCurrentItem() == 2){//场景
+            FragmentScenes scenes = (FragmentScenes) listFragments.get(2);
+            scenes.addScene();
+        }
+
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Logger.i(TAG,"width : "+menulayout.getLayoutParams().width+"screen with : "+ ScreenUtil.getScreenWidth(this));
+
+    }
+
+    private void showDrawer() {
+        drawer.openMenu(true);
+    }
+
+
+
+}

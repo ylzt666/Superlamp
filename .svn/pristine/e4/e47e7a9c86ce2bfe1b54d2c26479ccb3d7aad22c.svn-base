@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mxn.soul.flowingdrawer_core.FlowingDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:edMenuBackground="#dddddd"
+    app:edMenuSize="260dp"
+    app:edPosition="1">
+    <!--content-->
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/top_bar"/>
+        <com.linkus.superlamp.widget.HorizontalScrollDisabledViewPager
+            android:layout_below="@+id/top_bar"
+            android:layout_above="@+id/ll_bottom"
+            android:id="@+id/cb_content"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.linkus.superlamp.widget.HorizontalScrollDisabledViewPager>
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <LinearLayout
+                android:id="@+id/device_list"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/retangle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/green"
+                    android:text="设备列表"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/group_list"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/retangle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/green"
+                    android:text="组别"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/scene_list"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/retangle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/green"
+                    android:text="场景"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <!--menu-->
+    <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+        android:id="@+id/menulayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/id_container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+</com.mxn.soul.flowingdrawer_core.FlowingDrawer>

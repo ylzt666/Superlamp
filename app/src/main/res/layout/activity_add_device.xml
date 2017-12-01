@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/green"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/top_bar"/>
+        <LinearLayout
+            android:paddingTop="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="SSID:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_ssid"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:theme="@style/MyEditText"
+                    android:hint="Type something"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/label_psd"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="密码 "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="textVisiblePassword"
+                    android:layout_toRightOf="@+id/label_psd"
+                    android:id="@+id/et_psd"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:theme="@style/MyEditText"
+                    android:hint="Type something"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <CheckBox
+                    android:button="@drawable/selector_eye"
+                    android:padding="5dp"
+                    android:id="@+id/psd_eye"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <View
+                    android:background="@drawable/shape_coner_8dp"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="@string/more_devices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_no_network"
+                android:visibility="visible"
+                android:gravity="top|center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:background="@drawable/addition_no_wifi"
+                    android:layout_width="147dp"
+                    android:layout_height="113dp"/>
+                <TextView
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:text="@string/connect_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:text="@string/config_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:paddingTop="30dp"
+                android:id="@+id/ll_has_network"
+                android:gravity="top|center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:background="@drawable/addition_has_wifi"
+                    android:layout_width="142dp"
+                    android:layout_height="150dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_above="@+id/btn_ok"
+        android:layout_marginBottom="15dp"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:text="@string/ensure_wifi_shaing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:text="@string/ensure"
+        android:textColor="@color/green"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/drawable_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

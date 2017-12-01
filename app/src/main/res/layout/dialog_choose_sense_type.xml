@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        app:layout_widthPercent="100%w"
+        app:layout_heightPercent="61%h"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+        <TextView
+            android:textSize="12sp"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/in_use_type"
+            android:textColor="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.zhy.android.percent.support.PercentLinearLayout
+
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_widthPercent="100%w"
+        app:layout_heightPercent="30%h"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/use_colour"
+            android:background="@drawable/use_type"
+            android:text="@string/lamp_colour"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:background="@drawable/use_type"
+            android:layout_marginTop="3dp"
+            android:id="@+id/use_white"
+            android:text="@string/lamp_white"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:background="@drawable/use_type"
+            android:layout_marginTop="3dp"
+            android:id="@+id/use_switch"
+            android:text="@string/lamp_switch"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

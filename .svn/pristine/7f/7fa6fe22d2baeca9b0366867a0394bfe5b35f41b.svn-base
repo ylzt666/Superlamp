@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\work\\software\\Android\\projects\\SuperLamp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\back_left_white.png",
+        "source": "D:\\work\\software\\Android\\projects\\SuperLamp\\app\\src\\main\\res\\drawable-xhdpi\\back_left_white.png"
+    },
+    {
+        "merged": "D:\\work\\software\\Android\\projects\\SuperLamp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\retangle.png",
+        "source": "D:\\work\\software\\Android\\projects\\SuperLamp\\app\\src\\main\\res\\drawable-xhdpi\\retangle.png"
+    },
+    {
+        "merged": "D:\\work\\software\\Android\\projects\\SuperLamp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher_round.png",
+        "source": "D:\\work\\software\\Android\\projects\\SuperLamp\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher_round.png"
+    }
+]

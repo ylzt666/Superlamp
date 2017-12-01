@@ -1,0 +1,293 @@
+package com.linkus.superlamp.widget;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.RectF;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
+import android.view.View;
+
+import com.linkus.superlamp.logger.Logger;
+import com.linkus.superlamp.utils.ScreenUtil;
+
+/**
+ * Created by Administrator on 2017/9/26 0026.
+ */
+
+public class LampView extends View {
+    private String TAG = getClass().getSimpleName();
+    private int mWidth;
+    private int mHeight;
+    private Paint borderPaint;
+    private Context mContext;
+    private int mPaddingLeft;
+    private int mPaddingTop;
+    private int mPaddingRight;
+    private int mPaddingBottom;
+    private float mLampCenter;
+    private float mlampOutWith;
+    private float mLampCenterX;
+    private float mLampCenterY;
+    private float mLampCenterRadius;
+    private Paint mLinePaint;
+    private float mLampCenterCircleRadius;
+    private float mLampCircleCenterX;
+    private float mLampCircleCenterY;
+
+    //左边圆弧X
+    private int mBottomLeftCenterX;
+    //左边圆弧Y
+    private float mBottomLeftCenterY;
+    //右边圆弧X
+    private int mBottomRightCenterX;
+    //右边圆弧Y
+    private float mBottomRightCenterY;
+
+
+    //圆弧半径
+    private float mBottomArcRadius;
+
+    //画下面的画笔
+    private Paint mBottomPaint;
+
+
+    /**
+     * 当前是否被禁止
+     */
+    private boolean mEnabled = true;
+
+
+    public LampView(Context context) {
+        super(context);
+
+        init(context, null, 0, 0);
+    }
+
+    public LampView(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+        init(context, attrs, 0, 0);
+    }
+
+    public LampView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init(context, attrs, defStyleAttr, 0);
+    }
+
+    public LampView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+        init(context, attrs, defStyleAttr, defStyleRes);
+    }
+
+    public void init(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes){
+        mContext = context;
+        borderPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        borderPaint.setColor(Color.parseColor("#FF0000"));
+        borderPaint.setStrokeWidth(ScreenUtil.dip2px(mContext, 5));
+        borderPaint.setStyle(Paint.Style.STROKE);
+
+
+        mLinePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        mLinePaint.setStrokeWidth(ScreenUtil.dip2px(mContext,1));
+        mLinePaint.setStyle(Paint.Style.STROKE);
+        mLinePaint.setColor(Color.WHITE);
+
+        mPaddingLeft = getPaddingLeft();
+        mPaddingTop = getPaddingTop();
+        mPaddingRight = getPaddingRight();
+        mPaddingBottom = getPaddingBottom();
+        mLampCenter = 5f /13;
+
+        mBottomPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        mBottomPaint.setStrokeWidth(ScreenUtil.dip2px(mContext,1));
+        mBottomPaint.setStyle(Paint.Style.STROKE);
+        mBottomPaint.setColor(Color.WHITE);
+
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        drawBorder(canvas);
+        drawTop(canvas);
+
+        drawBottomLeft(canvas);
+        drawBottomRight(canvas);
+        super.onDraw(canvas);
+    }
+
+    private void drawBottomRight(Canvas canvas) {
+        RectF rectL = new RectF(
+                mBottomRightCenterX - mBottomArcRadius,
+                mBottomRightCenterY - mBottomArcRadius,
+                mBottomRightCenterX + mBottomArcRadius,
+                mBottomRightCenterY + mBottomArcRadius
+        );
+        canvas.drawArc(rectL, -180, 90, false, mBottomPaint);
+
+    }
+
+    private void drawBottomLeft(Canvas canvas) {
+        RectF rectL = new RectF(
+                mBottomLeftCenterX - mBottomArcRadius,
+                mBottomLeftCenterY - mBottomArcRadius,
+                mBottomLeftCenterX + mBottomArcRadius,
+                mBottomLeftCenterY + mBottomArcRadius
+        );
+        canvas.drawArc(rectL, -90, 90, false, mBottomPaint);
+    }
+
+    private void drawTop(Canvas canvas) {
+        RectF rectF = new RectF(mLampCenterX - mLampCenterRadius,
+                mLampCenterY-mLampCenterRadius,
+                mLampCenterX + mLampCenterRadius,
+                mLampCenterY + mLampCenterRadius);
+        canvas.drawArc(rectF, 180 + 20, 140, false, mLinePaint);
+        canvas.drawPoint(mLampCenterX,mLampCenterY,mLinePaint);
+        float intervalDegress = 140/17f;
+        canvas.rotate(20, mWidth / 2, mLampCenterY);
+        Logger.i(TAG,"mLampCenterX - mLampCenterRadius "+(mLampCenterX - mLampCenterRadius));
+        canvas.drawLine(mLampCenterX - mLampCenterRadius,
+                mLampCenterY, mLampCenterX - mLampCenterRadius +ScreenUtil.dip2px(mContext,-20),
+                mLampCenterY,
+                mLinePaint);
+        for (int i = 0; i < 17 ; i++) {
+            canvas.rotate(intervalDegress, mWidth / 2, mLampCenterY);
+            canvas.drawLine(mLampCenterX - mLampCenterRadius,
+                    mLampCenterY, mLampCenterX - mLampCenterRadius + ScreenUtil.dip2px(mContext, -20),
+                    mLampCenterY,
+                    mLinePaint);
+        }
+
+        canvas.rotate(-140 - 20, mWidth / 2, mLampCenterY);
+
+        //灯泡下面第一个大方块
+        RectF rectB = new RectF(mLampCenterX - ScreenUtil.dip2px(mContext,40),
+                mLampCircleCenterY + mLampCenterCircleRadius-ScreenUtil.dip2px(mContext,15)
+                , mLampCenterX + ScreenUtil.dip2px(mContext,40)
+                , mLampCircleCenterY + mLampCenterCircleRadius + ScreenUtil.dip2px(mContext,15));
+        mLinePaint.setColor(Color.WHITE);
+        mLinePaint.setStyle(Paint.Style.FILL);
+        canvas.drawRoundRect(rectB, 20, 20, mLinePaint);
+        mLinePaint.setColor(Color.parseColor("#4d5d7b"));
+        mLinePaint.setStyle(Paint.Style.STROKE);
+        mLinePaint.setStrokeWidth(ScreenUtil.dip2px(mContext,1));
+        canvas.drawRoundRect(rectB, 20, 20, mLinePaint);
+
+        //灯泡下面小大方块
+        RectF rectFD = new RectF(rectB.left + ScreenUtil.dip2px(mContext, 25)
+                , rectB.bottom + 2 * ScreenUtil.dip2px(mContext, 10)
+                , rectB.right - ScreenUtil.dip2px(mContext, 25)
+                , rectB.bottom + 2 * ScreenUtil.dip2px(mContext, 10)+ ScreenUtil.dip2px(mContext, 35));
+        mLinePaint.setColor(Color.WHITE);
+        mLinePaint.setStyle(Paint.Style.FILL);
+        canvas.drawRoundRect(rectFD,30,30,mLinePaint);
+        mLinePaint.setColor(Color.parseColor("#4d5d7b"));
+        mLinePaint.setStyle(Paint.Style.STROKE);
+        canvas.drawRoundRect(rectFD,30,30,mLinePaint);
+        // 4个小块
+        for (int i = 0; i < 4; i++) {
+            mLinePaint.setColor(Color.WHITE);
+            mLinePaint.setStyle(Paint.Style.FILL);
+            RectF rectFC = new RectF(rectB.left + ScreenUtil.dip2px(mContext, 10)
+                    , rectB.bottom + ScreenUtil.dip2px(mContext, 10) * i
+                    , rectB.right - ScreenUtil.dip2px(mContext, 10)
+                    , rectB.bottom + ScreenUtil.dip2px(mContext, 10) * (i + 1));
+            canvas.drawRoundRect(rectFC, 20, 20, mLinePaint);
+            mLinePaint.setColor(Color.parseColor("#4d5d7b"));
+            mLinePaint.setStyle(Paint.Style.STROKE);
+            canvas.drawRoundRect(rectFC, 20, 20, mLinePaint);
+        }
+
+
+
+        RectF rectFSmallCircle = new RectF(mLampCenterX + mLampCenterCircleRadius * (3f / 5) - ScreenUtil.dip2px(mContext,10),
+                mLampCenterY + mLampCenterCircleRadius * (3f / 5) - ScreenUtil.dip2px(mContext,20),
+                mLampCenterX + 2 * mLampCenterCircleRadius * (3f / 5) - ScreenUtil.dip2px(mContext,10),
+                mLampCenterY + 2 * mLampCenterCircleRadius * (3f / 5) - ScreenUtil.dip2px(mContext,20)
+        );
+
+        mLinePaint.setColor(Color.WHITE);
+        mLinePaint.setStyle(Paint.Style.FILL);
+        canvas.drawOval(rectFSmallCircle,mLinePaint);
+
+        mLinePaint.setStyle(Paint.Style.STROKE);
+        mLinePaint.setColor(Color.parseColor("#4d5d7b"));
+        canvas.drawOval(rectFSmallCircle,mLinePaint);
+
+
+        //大圆开始
+        RectF rectFCircle = new RectF(mLampCenterX - mLampCenterCircleRadius,
+                mLampCircleCenterY - mLampCenterCircleRadius,
+                mLampCenterX + mLampCenterCircleRadius,
+                mLampCircleCenterY + mLampCenterCircleRadius);
+        mLinePaint.setColor(Color.WHITE);
+        mLinePaint.setStyle(Paint.Style.FILL);
+        canvas.drawOval(rectFCircle,mLinePaint);
+
+        mLinePaint.setStyle(Paint.Style.STROKE);
+        mLinePaint.setColor(Color.parseColor("#4d5d7b"));
+        canvas.drawOval(rectFCircle,mLinePaint);
+
+
+    }
+
+    private void drawBorder(Canvas canvas) {
+        canvas.drawRect(new RectF(0,0,mWidth,mHeight),borderPaint);
+//        canvas.scale(0.5f,0.5f);
+////        canvas.drawRect(new RectF(0,0,mWidth*0.5f,mHeight*0.5f),borderPaint);
+//        borderPaint.setStyle(Paint.Style.FILL);
+//        canvas.drawRect(new RectF(0,0,mWidth,mHeight),borderPaint);
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        final int height = getDefaultSize(getSuggestedMinimumHeight(),
+                heightMeasureSpec);
+        final int width = getDefaultSize(getSuggestedMinimumWidth(),
+                widthMeasureSpec);
+        Logger.i(TAG, "onMeasure : " + width + " == " + height);
+        mWidth = width;
+        mHeight = height;
+
+
+        mlampOutWith = mWidth * 0.8f;
+        mLampCenterX = (float) Math.ceil((mWidth - (mPaddingLeft + mPaddingRight)) / 2);
+        mLampCenterY = (float) Math.ceil(mLampCenter * (mHeight - (mPaddingLeft + mPaddingBottom)));
+        mLampCenterRadius = (float) Math.ceil((mWidth - (mPaddingLeft + mPaddingRight)) / 2) - 80;
+
+//        mLampCircleCenterX = mLampCenterX - 30;
+        mLampCircleCenterY = mLampCenterY - 30;
+        mLampCenterCircleRadius = mLampCenterRadius - 100;
+
+
+        mBottomLeftCenterX = mPaddingLeft + ScreenUtil.dip2px(mContext,20);
+        mBottomLeftCenterY = (mHeight - (mPaddingLeft + mPaddingBottom)) * 0.9f ;
+
+
+        mBottomRightCenterX = ScreenUtil.getScreenWidth(mContext) - mPaddingRight - ScreenUtil.dip2px(mContext, 20);
+
+        mBottomRightCenterY = mBottomLeftCenterY ;
+
+
+        mBottomArcRadius = ScreenUtil.getScreenWidth(mContext) * 1f / 4;
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        Logger.i(TAG, "event : " + "event.getX()" + event.getX() + "event.getY()" + event.getY());
+        if (mEnabled) {
+
+        }
+        return super.onTouchEvent(event);
+    }
+
+
+    public void setEnabled(boolean enable){
+        this.mEnabled = enable;
+    }
+}

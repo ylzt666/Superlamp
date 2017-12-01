@@ -1,0 +1,58 @@
+package com.linkus.superlamp;
+
+/**
+ * Created by jizi.chen on 2017/8/28.
+ */
+
+public class Constant {
+
+    public static String URL_HOST = "http://175.153.153.3:8011";
+
+    public static String URL_Start_API = URL_HOST + "/api/image/List/DZDST/HYYM";
+
+    public static String PortMain = ":8090";
+
+    public static String URL_Main = "http://175.153.153.3" + PortMain;
+
+
+
+
+
+
+    ////////////////////////Message ID here begin///////////////////////////////////////////////////
+    public static final int PAY_MESSAGE = 0xEE;
+    public static final int MESSAGE_PAY_REUSLT = PAY_MESSAGE + 0x00;
+    public static final int MESSAGE_PAY_SUCCESS = PAY_MESSAGE + 0x01;
+    public static final int MESSAGE_PAY_FAILED = PAY_MESSAGE + 0x02;
+    public static final int MESSAGE_PAY_CANCEL = +PAY_MESSAGE + 0x03;
+
+
+    public static final int MESSAGE_NETWORK = +PAY_MESSAGE + 0x04;
+
+
+    ////////////////////////Message ID here end///////////////////////////////////////////////////
+    public static final String METHOD_NAME = "@method_name";
+    public static final int MESSAGE_CHOOSE_METHOD = PAY_MESSAGE + 0x05;
+    public static final int MESSAGE_REQUEST_METHOD = PAY_MESSAGE + 0x06;
+
+    static {
+
+        switch (0){
+            case MESSAGE_PAY_REUSLT:
+                break;
+            case MESSAGE_PAY_SUCCESS:
+                break;
+            case MESSAGE_PAY_FAILED:
+                break;
+            case MESSAGE_PAY_CANCEL:
+                break;
+            case MESSAGE_NETWORK:
+                break;
+            case MESSAGE_CHOOSE_METHOD:
+                break;
+
+        }
+    }
+
+
+}

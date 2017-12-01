@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/top_bar"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="1"
+        android:layout_below="@+id/top_bar"
+        android:background="#efeff4"
+        android:id="@+id/rv_list"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </android.support.v7.widget.RecyclerView>
+    <Button
+        android:textColor="@color/green"
+        android:background="@drawable/btn_apply"
+        android:layout_below="@+id/rv_list"
+        android:text="@string/apply"
+        android:id="@+id/btn_apply"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+</LinearLayout>

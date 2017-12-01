@@ -1,0 +1,4 @@
+#Mon Nov 06 10:42:10 CST 2017
+base.0=D\:\\work\\Android\\projects\\SuperLamp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
+renamed.0=classes.dex
+file.0=D\:\\work\\Android\\projects\\SuperLamp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19\\classes.dex

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/green"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/top_bar"/>
+        <LinearLayout
+            android:paddingTop="50dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="SSID:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_ssid"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:theme="@style/MyEditText"
+                    android:hint="Type something"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="密码 "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_psd"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:theme="@style/MyEditText"
+                    android:hint="Type something"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <View
+                    android:background="@drawable/shape_coner_8dp"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="多个设备"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_no_network"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/shape_coner_8dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:text="请链接WIFI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:text="前去配置WIFI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/ll_has_network"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/shape_coner_8dp"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_above="@+id/btn_ok"
+        android:layout_marginBottom="15dp"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:text="点击确定前请确认设备的灯处于慢闪状态"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:text="确认"
+        android:textColor="@color/green"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/drawable_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

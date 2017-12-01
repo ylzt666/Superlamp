@@ -1,0 +1,74 @@
+package com.linkus.superlamp;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+import java.util.List;
+
+/**
+ * 
+ * <p>
+ * ProjectName： com.esun.tqx.adapter
+ * </p>
+ * <p>
+ * Description：适配器基类
+ * </p>
+ *
+ * @author tangzhijie
+ * @version 1.0
+ * @createdate 2016年1月4日 上午10:50:13
+ */
+public abstract class MyBaseAdapter<T> extends BaseAdapter {
+
+	public List<T> list;
+	public Context context;
+
+	public MyBaseAdapter(List<T> list, Context context) {
+		this.list = list;
+		this.context = context;
+	}
+
+	@Override
+	public int getCount() {
+		return list == null ? 0 : list.size();
+	}
+
+	@Override
+	public Object getItem(int position) {
+		return list == null ? null : list.get(position);
+	}
+
+	@Override
+	public long getItemId(int position) {
+		return position;
+	}
+
+	/**
+	 * 加载子类布局文件
+	 * 
+	 * @param layoutId
+	 * @return
+	 */
+	public View inflateView(int layoutId, ViewGroup parentView) {
+		return LayoutInflater.from(context).inflate(layoutId, parentView, false);
+	}
+
+	/**
+	 * 获得控件，封装了findViewById
+	 * 
+	 * @param view
+	 * @param resId
+	 * @return
+	 */
+	@SuppressWarnings({ "unchecked", "hiding" })
+	public <T extends View> T getView(View view, int resId) {
+		View v = view.findViewById(resId);
+		return (T) v;
+	}
+
+	public abstract View getView(int position, View convertView, ViewGroup parent);
+
+}

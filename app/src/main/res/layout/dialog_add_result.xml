@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_success"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_retangel_10dp"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="200dp">
+        <ImageView
+            android:src="@drawable/addition_succeed"
+            android:layout_width="200dp"
+            android:layout_height="106dp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="@string/add_success"
+            android:textSize="16sp"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_failed"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/shape_retangel_10dp"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/ll_success"
+        android:layout_alignStart="@+id/ll_success">
+        <ImageView
+            android:src="@drawable/addition_failed"
+            android:layout_width="200dp"
+            android:layout_height="106dp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="@string/add_failed"
+            android:textSize="16sp"
+            android:textColor="@color/error_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

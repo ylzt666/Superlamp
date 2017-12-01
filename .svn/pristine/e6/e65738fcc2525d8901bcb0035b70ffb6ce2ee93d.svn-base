@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "D:\\work\\software\\Android\\projects\\SuperLamp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "C:\\Users\\54757\\.android\\build-cache\\01476b0cae84eac08ddd8e76853ef29950eea723\\output\\res\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 63,
+                        "endOffset": 114
+                    }
+                }
+            }
+        ]
+    }
+]

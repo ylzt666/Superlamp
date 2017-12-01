@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">SuperLamp</string>
+    <string name="login_text">LINKUS LIGHT</string>
+    <string name="login_info">
+        Welcome to login with Amazon \n
+        if this is your first time loggin in,you will be beased to give
+        permission for this application to access your profile data
+    </string>
+    <string name="ensure_wifi_shaing">点击确定前请确认设备的灯处于慢闪状态</string>
+    <string name="ensure">确认</string>
+    <string name="more_devices">多个设备</string>
+    <string name="config_wifi">前去配置WIFI</string>
+    <string name="connect_wifi">请链接WIFI</string>
+    <string name="label_time">触发时间</string>
+    <string name="label_freq">触发频率</string>
+    <string name="label_action">触发动作</string>
+    <string name="open">开</string>
+    <string name="close">关</string>
+
+
+    <string name="per_day">每天</string>
+    <string name="per_hour">没小时</string>
+    <string name="per_time">每次</string>
+    <string name="once">单次</string>
+
+
+
+    <string name="clock_time">闹铃定时</string>
+    <string name="device_switch">设备开关</string>
+    <string name="state_open">  开启  </string>
+    <string name="state_close">  关闭  </string>
+
+
+    <string name="in_use_type">请选择要应用的设备类型</string>
+
+    <string name="lamp_white">白灯</string>
+    <string name="lamp_colour">彩灯</string>
+    <string name="lamp_switch">开关</string>
+
+
+
+
+    <string name="more">更多</string>
+    <string name="update">本地升级</string>
+    <string name="recovery">恢复出厂设置</string>
+    <string name="delete_device">删除设备</string>
+    <string name="delete_group">删除分组</string>
+    <string name="change_device_name">修改设备名称</string>
+    <string name="change_group_name">修改分组名称</string>
+    <string name="choose_one">请选择设备</string>
+    <string name="apply">应用</string>
+    <string name="sense">场景</string>
+    <string name="group">组别</string>
+    <string name="device_list">设备列表</string>
+    <string name="cancel">取消</string>
+    <string name="group_name">分组名称</string>
+    <string name="next_step">下一步</string>
+    <string name="device_type">设备类型</string>
+    <string name="colour_lamp">彩灯</string>
+    <string name="white_lamp">白灯</string>
+    <string name="add_success">添加成功</string>
+    <string name="add_failed">添加失败</string>
+    <string name="input">请输入文本...</string>
+    <string name="no_device">没有设备</string>
+    <string name="add_hint">您可以通过添加设备来控制设备</string>
+    <string name="company">凌科斯科技(深圳) 有限公司</string>
+    <string name="website">www.linkustek.com</string>
+    <string name="no_group">没有分组</string>
+    <string name="group_hint">您可以通过添加分组来管理设备</string>
+    <string name="no_sense">没有场景</string>
+    <string name="sense_hint">您可以添加场景</string>
+
+
+</resources>

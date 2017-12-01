@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/ll_edit_group_name"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/shape_retangel_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/group_tab_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/label_group"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/group_name"
+            android:textSize="16sp"
+            android:textColor="#9aa3b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:maxLines="1"
+            android:id="@+id/et_group_name"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:theme="@style/MyEditTextBlack"
+            android:layout_below="@+id/label_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_next_step"
+            android:layout_below="@+id/et_group_name"
+            android:background="@drawable/shape_retangel_5dp_green"
+            android:textColor="@color/white"
+            android:text="@string/next_step"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_group_devices_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape_retangel_10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/btn_close2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/group_tab_close" />
+
+        <TextView
+            android:id="@+id/label_group_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/device_type"
+            android:textColor="#4d5d7b"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_group_type"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+                <!--android:theme="@style/My_CheckBox"-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="47dp"
+                        android:layout_height="47dp"
+                        android:src="@drawable/group_icon_colour"/>
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/colour_lamp"
+                        android:textColor="#4d5d7b"
+                        android:textSize="18sp"/>
+                    <RadioButton
+                        android:tag="@string/colour_lamp"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/cb_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_choose_type"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black_50" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+                <!--android:theme="@style/My_CheckBox"-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="47dp"
+                        android:layout_height="47dp"
+                        android:src="@drawable/group_icon_white" />
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="白灯"
+                        android:textColor="#4d5d7b"
+                        android:textSize="18sp"/>
+                    <RadioButton
+                        android:tag="@string/white_lamp"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/cb_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_choose_type"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black_50" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+                <!--android:theme="@style/My_CheckBox"-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="47dp"
+                        android:layout_height="47dp"
+                        android:src="@drawable/group_icon_colour" />
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/lamp_switch"
+                        android:textColor="#4d5d7b"
+                        android:textSize="18sp"/>
+                    <RadioButton
+                        android:tag="@string/lamp_switch"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/cb_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_choose_type"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black_50" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_retangel_5dp_green"
+            android:text="@string/ensure"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

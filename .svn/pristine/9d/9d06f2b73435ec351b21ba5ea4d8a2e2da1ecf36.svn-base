@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="blue">@android:color/holo_blue_light</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="orange">#FE9526</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="red">#80FF0000</color>
+    <color name="red_90">#90FF0000</color>
+    <color name="red_100">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="light_black">#7F7F7F</color>
+
+    <!-- bannerView的色彩 -->
+    <color name="background_grid_item">#fff7f7f7</color>
+    <color name="list_item_bg_color_pressed">#ffebebeb</color>
+    <color name="divider_color_grid">#ffe2e3e3</color>
+    <color name="transparent">#00000000</color>
+    <color name="aid_tab_blue">#00A2FF</color>
+    <color name="aid_app_detail_gray">#A7A7A7</color>
+    <color name="bannerview_background">#14079702</color>
+    <!---->
+
+    <!--line_divider-->
+    <color name="line_divider">#ffe2e3e3</color>
+    <!---->
+    <color name="background_gray">#F0F0F0</color>
+    <color name="view_gray">#F6F6F6</color>
+    <color name="center_gray">#9b9595</color>
+
+    <!--#3-->
+    <color name="color_text">#333333</color>
+    <color name="color_text6">#666666</color>
+    <color name="color_text5">#404952</color>
+    <color name="color_text7">#929292</color>
+    <!---->
+    <color name="background_yellow">#FF9402</color>
+
+    <!---->
+    <color name="gray">#AAAA</color>
+
+    <color name="green">#41d08e</color>
+    <color name="div_line">#E1E1E1</color>
+
+    <color name="pop_color">#70000000</color>
+    <color name="dialog_tiltle_blue">#2277BB</color>
+</resources>

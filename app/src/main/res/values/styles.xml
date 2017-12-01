@@ -1,0 +1,105 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@color/green</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">false</item>
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <!--<item name="android:finishOnTaskLaunch">false</item>-->
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+    <style name="MyEditTextBlack" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+    <style name="MyEditTextBlack_50" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/black_50</item>
+        <item name="colorControlActivated">@color/black_50</item>
+    </style>
+    <style name="My_CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox">
+        <item name="android:colorControlActivated">@color/green</item>
+        <item name="android:colorControlNormal">@color/green</item>
+    </style>
+    <style name="Dialog_FULL_SCREEN">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transiant_44</item>
+    </style>
+    <style name="RecycleViewDivider">
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+    <style name="CB_Lamp" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_lamp</item>
+        <item name="android:paddingLeft">25.0dip</item>
+        <item name="android:maxHeight">100.0dip</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+
+    <style name="btn_bg">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/click_button_selector</item>
+    </style>
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+
+    <declare-styleable name="SeekArc">
+        <attr name="thumb" format="reference" />
+        <attr name="thumbOffset" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="arcWidth" format="dimension" />
+        <attr name="progress" format="integer" />
+        <attr name="rotation" format="integer" />
+        <attr name="startAngle" format="integer" />
+        <attr name="sweepAngle" format="integer" />
+        <attr name="arcColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="roundEdges" format="boolean" />
+        <attr name="touchInside" format="boolean" />
+        <attr name="clockwise" format="boolean" />
+        <attr name="enabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SeekArcTheme">
+        <attr name="seekArcStyle" format="reference"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="brightView">
+        <attr name="viewBackground" format="color" />
+        <attr name="dotNumber" format="integer" />
+        <attr name="dotRadius" format="dimension" />
+        <attr name="radianRadius" format="dimension" />
+    </declare-styleable>
+
+</resources>

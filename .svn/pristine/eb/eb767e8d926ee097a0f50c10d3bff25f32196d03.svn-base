@@ -1,0 +1,78 @@
+package com.linkus.superlamp.view;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.linkus.superlamp.BaseActivity;
+import com.linkus.superlamp.R;
+import com.linkus.superlamp.utils.NetTools;
+
+import butterknife.BindView;
+import butterknife.OnClick;
+
+/**
+ * Created by 54757 on 9/24/2017.
+ */
+
+public class AddDeviceActivity extends BaseActivity{
+    @BindView(R.id.tv_page_name)
+    TextView pageName;
+    @BindView(R.id.tv_top_right)
+    ImageView topRight;
+    @BindView(R.id.back_left)
+    ImageView backLeft;
+    @BindView(R.id.ll_has_network)
+    LinearLayout llHasNetwork;
+    @BindView(R.id.ll_no_network)
+    LinearLayout llNONetwork;
+
+
+    @Override
+    protected void beforeShow(Bundle savedInstanceState) {
+
+    }
+
+    @Override
+    public void bindView() {
+        setContentView(R.layout.activity_add_device);
+    }
+
+    @Override
+    public void findAllViews() {
+        backLeft.setVisibility(View.VISIBLE);
+        pageName.setText("添加设备");
+    }
+
+    @Override
+    public void setAllListeners() {
+
+    }
+
+    @Override
+    public void doProcess() {
+        if (NetTools.isNetworkConnected(this)){
+            llNONetwork.setVisibility(View.GONE);
+            llHasNetwork.setVisibility(View.VISIBLE);
+        }else {
+            llHasNetwork.setVisibility(View.GONE);
+            llNONetwork.setVisibility(View.VISIBLE);
+        }
+    }
+
+    @OnClick({R.id.back_left})
+    public void onViewClicked(View v) {
+        switch (v.getId()){
+            case R.id.back_left:
+                goBack();
+                break;
+        }
+    }
+
+    private void goBack() {
+
+        finish();
+    }
+}

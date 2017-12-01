@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <com.scwang.smartrefresh.layout.header.ClassicsHeader
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+   </com.scwang.smartrefresh.layout.header.ClassicsHeader>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:visibility="gone"
+           android:gravity="center_horizontal"
+           android:background="#efeff4"
+           android:orientation="vertical"
+           android:id="@+id/no_groups"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="3"/>
+           <ImageView
+               android:background="@drawable/shape_coner_gray_home"
+               android:layout_width="160px"
+               android:layout_height="160px"/>
+           <TextView
+               android:textColor="#4d5d7b"
+               android:textSize="16sp"
+               android:layout_marginTop="15dp"
+               android:gravity="center_horizontal"
+               android:text="@string/no_group"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:textColor="#4d5d7b"
+               android:layout_marginTop="15dp"
+               android:textSize="14sp"
+               android:gravity="center_horizontal"
+               android:text="@string/group_hint"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+           <android.support.v4.widget.Space
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="4"/>
+       </LinearLayout>
+       <LinearLayout
+
+           android:paddingBottom="15dp"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:layout_alignParentBottom="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:textSize="14sp"
+               android:gravity="center"
+               android:textColor="#4d5d7b"
+               android:text="@string/company"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+           <TextView
+               android:layout_marginTop="5dp"
+               android:gravity="center"
+               android:text="@string/website"
+               android:linksClickable="true"
+               android:textColorLink="#a9c6ec"
+               android:autoLink="web"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+       </LinearLayout>
+       <android.support.v7.widget.RecyclerView
+           android:background="#efeff4"
+           android:theme="@style/RecycleViewDivider"
+           android:id="@+id/rv_list"
+           android:visibility="visible"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+       </android.support.v7.widget.RecyclerView>
+   </RelativeLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

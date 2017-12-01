@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/cb_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.bigkoo.convenientbanner.ConvenientBanner>
+    <TextView
+        android:visibility="gone"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/tv_go"
+        android:background="#20000000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="#20000000"
+        android:id="@+id/tv_count"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

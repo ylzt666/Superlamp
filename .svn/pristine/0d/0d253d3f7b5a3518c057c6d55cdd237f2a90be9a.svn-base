@@ -1,0 +1,222 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:1:1-78:12
+	package
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:1:11-69
+	android:versionCode
+		INJECTED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:4:5-71
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:4:22-68
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:5:5-76
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:5:22-73
+uses-permission#android.permission.READ_LOGS
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:6:5-68
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:6:22-65
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:8:5-73
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:8:22-70
+uses-permission#android.permission.INTERNET
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:11:22-73
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:12:5-68
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:12:22-65
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:13:5-74
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:13:22-72
+uses-permission#android.permission.RESTART_PACKAGES
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:14:5-75
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:14:22-72
+uses-permission#android.permission.GET_TASKS
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:15:5-68
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:15:22-65
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:16:5-71
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:16:22-68
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:17:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:18:5-66
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:18:22-63
+uses-permission#android.permission.REORDER_TASKS
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:19:5-72
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:19:22-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:20:5-80
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:20:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:21:5-81
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:21:22-78
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:22:5-84
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:22:22-81
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:23:5-78
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:23:22-76
+uses-permission#android.permission.CAMERA
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:24:5-64
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:24:22-62
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:25:22-66
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:26:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:27:5-80
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:27:22-78
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:28:5-89
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:28:22-86
+application
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:31:5-75:19
+MERGED from [pub.devrel:easypermissions:0.1.9] C:\Users\54757\.android\build-cache\ee889379529eafc48f862cc0589d67f4a770b3a7\output\AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\54757\.android\build-cache\80216213baaf0fb6a35c28af2615380d2b583354\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\54757\.android\build-cache\01476b0cae84eac08ddd8e76853ef29950eea723\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\54757\.android\build-cache\210be83c8780fd4fd5715a78e588ead1183b64da\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\54757\.android\build-cache\838fd0cb2b9de6c6a6aea2853a0c10ea817a3824\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\54757\.android\build-cache\cb1c4d4913e5d21a3119488ab730b90c119bcdfd\output\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:34:9-41
+	android:supportsRtl
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:35:9-35
+	android:allowBackup
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:32:9-35
+	android:icon
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:33:9-43
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:36:9-28
+activity#com.linkus.superlamp.view.SplashActivity
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:37:9-46:20
+	android:screenOrientation
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:41:13-49
+	android:windowSoftInputMode
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:39:13-64
+	android:configChanges
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:40:13-74
+	android:theme
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:38:13-44
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:37:19-54
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:42:13-45:29
+action#android.intent.action.MAIN
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:43:17-69
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:43:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:44:17-77
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:44:27-74
+activity#com.linkus.superlamp.view.MainActivity
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:48:9-53:20
+	android:screenOrientation
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:52:13-49
+	android:windowSoftInputMode
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:50:13-64
+	android:configChanges
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:51:13-74
+	android:theme
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:49:13-44
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:48:19-52
+activity#com.linkus.superlamp.view.LoginActivity
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:55:9-60:20
+	android:screenOrientation
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:59:13-49
+	android:windowSoftInputMode
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:57:13-64
+	android:configChanges
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:58:13-74
+	android:theme
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:56:13-44
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:55:19-53
+activity#com.linkus.superlamp.view.AddDeviceActivity
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:62:9-67:20
+	android:screenOrientation
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:66:13-49
+	android:windowSoftInputMode
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:64:13-61
+	android:configChanges
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:65:13-74
+	android:theme
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:63:13-44
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:62:19-57
+receiver#com.linkus.superlamp.utils.NetBroadcastReceiver
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:70:9-74:20
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:70:19-61
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:71:13-73:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:72:17-79
+	android:name
+		ADDED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml:72:25-76
+uses-sdk
+INJECTED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [pub.devrel:easypermissions:0.1.9] C:\Users\54757\.android\build-cache\ee889379529eafc48f862cc0589d67f4a770b3a7\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\54757\.android\build-cache\4e82d33a786483863532ee1fd280ebee90988ad2\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\54757\.android\build-cache\80216213baaf0fb6a35c28af2615380d2b583354\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.bigkoo:convenientbanner:2.0.5] C:\Users\54757\.android\build-cache\5ab36f6d361e5c1893305e6469cc32dda8918531\output\AndroidManifest.xml:7:5-44
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\54757\.android\build-cache\01476b0cae84eac08ddd8e76853ef29950eea723\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\54757\.android\build-cache\210be83c8780fd4fd5715a78e588ead1183b64da\output\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\54757\.android\build-cache\838fd0cb2b9de6c6a6aea2853a0c10ea817a3824\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\54757\.android\build-cache\cb1c4d4913e5d21a3119488ab730b90c119bcdfd\output\AndroidManifest.xml:20:5-43
+MERGED from [com.mxn.soul:flowingdrawer-core:2.0.0] C:\Users\54757\.android\build-cache\9365d0b3f76b44ab23b81d4c60f4433e7e5d2685\output\AndroidManifest.xml:8:5-10:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-compat:25.3.0] C:\Users\54757\.android\build-cache\80216213baaf0fb6a35c28af2615380d2b583354\output\AndroidManifest.xml:23:9-55
+	android:targetSdkVersion
+		INJECTED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\work\software\Android\projects\SuperLamp\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-compat:25.3.0] C:\Users\54757\.android\build-cache\80216213baaf0fb6a35c28af2615380d2b583354\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-compat:25.3.0] C:\Users\54757\.android\build-cache\80216213baaf0fb6a35c28af2615380d2b583354\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-compat:25.3.0] C:\Users\54757\.android\build-cache\80216213baaf0fb6a35c28af2615380d2b583354\output\AndroidManifest.xml:26:9-47

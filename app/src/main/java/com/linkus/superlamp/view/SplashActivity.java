@@ -1,0 +1,303 @@
+package com.linkus.superlamp.view;
+
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+
+import com.bigkoo.convenientbanner.ConvenientBanner;
+import com.bigkoo.convenientbanner.holder.CBViewHolderCreator;
+import com.bigkoo.convenientbanner.holder.Holder;
+import com.bigkoo.convenientbanner.listener.OnItemClickListener;
+import com.bumptech.glide.Glide;
+import com.linkus.superlamp.App;
+import com.linkus.superlamp.BaseActivity;
+import com.linkus.superlamp.R;
+import com.linkus.superlamp.beans.StartBean;
+import com.linkus.superlamp.behaviours.BehaviorFactory;
+import com.linkus.superlamp.behaviours.SplashBehavior;
+import com.linkus.superlamp.logger.Logger;
+import com.linkus.superlamp.utils.NetTools;
+import com.linkus.superlamp.utils.ScreenUtil;
+import com.linkus.superlamp.utils.SharePrefrenceUtil;
+import com.linkus.superlamp.utils.StatusBarUtils;
+import com.linkus.superlamp.utils.Utils;
+
+
+import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import butterknife.BindView;
+import butterknife.OnClick;
+
+/**
+ * Created by jizi.chen on 2017/8/28.
+ */
+
+public class SplashActivity extends BaseActivity implements SplashBehavior.OnStartResponse{
+
+    public static final int AUTO_TURNING_TIME = 2000;
+
+    @BindView(R.id.cb_welcome)
+    ConvenientBanner cbWelcome;
+    @BindView(R.id.tv_go)
+    TextView tvGo;
+
+
+    @BindView(R.id.tv_count)
+    TextView tvCount;
+
+    private SplashBehavior behavior;
+
+    private boolean hasGO = false;
+
+
+    @Override
+    protected void beforeShow(Bundle savedInstanceState) {
+        behavior = (SplashBehavior) BehaviorFactory.create(SplashBehavior.class);
+        behavior.setStartListener(this);
+         getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+    }
+
+    @Override
+    public void bindView() {
+        setContentView(R.layout.activity_splash);
+    }
+
+    @Override
+    public void findAllViews() {
+    }
+
+    @Override
+    public void setAllListeners() {
+        cbWelcome.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Logger.i(TAG,"on last page clicked go to main "+cbWelcome.getViewPager().getAdapter().getRealCount()+"position"+position);
+                if ((position + 1) == cbWelcome.getViewPager().getAdapter().getRealCount()) {
+                    decideToGo();
+                }
+            }
+        });
+    }
+
+    @Override
+    public void doProcess() {
+        Logger.i(TAG,"isFirstIn()"+isFirstIn());
+        if (isFirstIn()) {
+            tvGo.setVisibility(View.VISIBLE);
+            tvGo.setText("立即体验");
+            tvCount.setVisibility(View.GONE);
+        } else {
+            tvGo.setVisibility(View.GONE);
+            tvCount.setVisibility(View.VISIBLE);
+            tvCount.setText("跳过");
+        }
+        boolean networkConnected = NetTools.isNetworkConnected(this);
+        Logger.i(TAG, "networkConnected >> " + networkConnected);
+        Object o = Utils.readObject(App.getInstance(),"splash", "home.txt");
+        Logger.i(TAG,"o is null "+(o == null));
+        if (o != null) {
+            StartBean bean = (StartBean) o;
+            showBanner(bean);
+        }else {
+            showDefaultBanner();
+        }
+
+        if (networkConnected) {
+            behavior.requestStartPage();
+        }
+    }
+
+    private void showBanner(final StartBean response) {
+        getHandler().post(new Runnable() {
+            @Override
+            public void run() {
+                cbWelcome.setPages(new CBViewHolderCreator() {
+                    @Override
+                    public Object createHolder() {
+                        return new BannerHolder();
+                    }
+                }, response.list)
+//                        .setPageIndicator(new int[]{R.drawable.shape_coner_green, R.drawable.shape_coner_white})
+                        .startTurning(AUTO_TURNING_TIME)
+                        .setCanLoop(false);
+                if (!isFirstIn()){
+                    timerToGoMain();
+                }
+            }
+        });
+    }
+
+    private int count = 3;
+
+    private void timerToGoMain() {
+        final Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                getHandler().post(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (count >= 0){
+                            count--;
+                            tvCount.setText("跳过");
+                        }else {
+                            Logger.i(TAG,"count less than zero "+ count);
+                        }
+                    }
+                });
+                if (count <= 1) {
+                    timer.cancel();
+                    decideToGo();
+                    count = 3;
+                }
+            }
+        }, 1000, 1000);
+    }
+
+    private void showDefaultBanner() {
+        getHandler().post(new Runnable() {
+            @Override
+            public void run() {
+                ArrayList<Integer> res = new ArrayList<>();
+                res.add(R.drawable.start_page_1);
+                res.add(R.drawable.start_page_2);
+                res.add(R.drawable.start_page_3);
+                cbWelcome.setPages(new CBViewHolderCreator() {
+                    @Override
+                    public Object createHolder() {
+                        return new BannerDefaultHolder();
+                    }
+                },res)
+//                        .setPageIndicator(new int[]{R.drawable.shape_coner_green,R.drawable.shape_coner_white})
+//                        .startTurning(AUTO_TURNING_TIME)
+                        .setCanLoop(false);
+                if (!isFirstIn()){
+                    timerToGoMain();
+                }
+            }
+        });
+    }
+
+
+    @OnClick({R.id.tv_go,R.id.tv_count})
+    public void onViewClicked(View v) {
+        switch (v.getId()){
+            case R.id.tv_go:
+                decideToGo();
+                break;
+            case R.id.tv_count:
+                decideToGo();
+                break;
+        }
+    }
+
+    private void decideToGo() {
+        if (hasGO){
+            return;
+        }
+        String isLogin = SharePrefrenceUtil.get(this, "isLogin");
+        if ("true".equals(isLogin)){
+            goLoginActivity();
+//            goMainActivity();
+        }else {
+            goLoginActivity();
+        }
+    }
+
+    private void goLoginActivity() {
+        hasGO = true;
+        SharePrefrenceUtil.put(this, "isFirst", "false");
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    private void goMainActivity() {
+        hasGO = true;
+        SharePrefrenceUtil.put(this, "isFirst", "false");
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
+    public void startResponseSuccess(StartBean bean) {
+//        showBanner(bean);
+    }
+
+    @Override
+    public void startResponseFailed(Exception e) {
+//        showDefaultBanner();
+    }
+
+    @Override
+    public void startForNothing() {
+        showDefaultBanner();
+    }
+
+
+    class BannerHolder implements Holder<StartBean.Data> {
+
+        private ImageView imageView;
+
+        @Override
+        public View createView(Context context) {
+            imageView = new ImageView(context);
+            imageView.setLayoutParams(new LinearLayout.LayoutParams(ScreenUtil.getScreenWidth(context)
+                    ,ScreenUtil.getScreenHeight(context)));
+            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+            return imageView;
+        }
+
+        @Override
+        public void UpdateUI(Context context, int position, StartBean.Data data) {
+            Glide.with(context)
+                    .load(data.getUrl())
+                    .override(ScreenUtil.getScreenWidth(context),ScreenUtil.getScreenHeight(context))
+                    .into(imageView);
+        }
+    }
+
+    class BannerDefaultHolder implements Holder<Integer> {
+
+        private ImageView imageView;
+
+        @Override
+        public View createView(Context context) {
+            imageView = new ImageView(context);
+            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+            return imageView;
+        }
+
+        @Override
+        public void UpdateUI(Context context, int position, Integer data) {
+            Glide.with(context)
+                    .load(data)
+                    .override(ScreenUtil.getScreenWidth(context),ScreenUtil.getScreenHeight(context))
+                    .into(imageView);
+        }
+    }
+
+    public boolean isFirstIn(){
+        return "true".equals(SharePrefrenceUtil.get(this, "isFirst", "true"));
+    }
+
+    @Override
+    protected void onDestroy() {
+        SharePrefrenceUtil.put(this, "isFirst", "false");
+        super.onDestroy();
+    }
+
+
+
+
+}

@@ -1,0 +1,43 @@
+package com.linkus.superlamp.fragments;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.linkus.superlamp.BaseFragment;
+
+/**
+ * Created by Administrator on 2017/9/25 0025.
+ */
+
+public class FragmentScenes extends BaseFragment {
+    @Override
+    protected void beforeShow() {
+
+    }
+
+    @Override
+    public View inflateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return null;
+    }
+
+    @Override
+    public void findAllViews(View rootView) {
+
+    }
+
+    @Override
+    public void setAllListeners() {
+
+    }
+
+    @Override
+    public void doProgress() {
+
+    }
+
+    public void addScene() {
+
+    }
+}
